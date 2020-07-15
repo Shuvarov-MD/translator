@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="block" style="display: flex;">
+    <form id='form' name='form_translate' style="display: flex; flex-direction: column;">
+      <div class="radio-block">
+        <input type="radio" name="lang" id="en-ru" checked><label for="en-ru">en-ru</label>
+        <input type="radio" name="lang" id="ru-en"><label for="ru-en">ru-en</label>
+      </div>
+      <textarea name="text_translate" id="textarea" cols="30" rows="10"></textarea>
+      <button type='submit' id='start'>Перевести</button>
+    </form>
+    <div class="result" id="result" style="border: 1px solid black; width: 235px; min-height: 158px; margin: 20px 0 0 20px;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
